@@ -1,0 +1,1 @@
+This project is meant to demonstrate my ability to create a homepage that looks like the google search engine. This will have demonstrated my ability to apply basic HTML and CSS styles to create a webpage.
