@@ -6,10 +6,25 @@ body {
 }
 nav {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: auto;
     height: 50px;
-    margin-top: 15px;
+    align-items: center;
+}
+
+nav div{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+nav div:nth-child(1){
+    justify-content: start;
+}
+nav div:nth-child(2){
+    justify-content: flex-end;
+}
+button:focus{
+    outline: none;
 }
 a {
     text-decoration: none;
@@ -24,7 +39,7 @@ a:hover {
     border: 1px solid transparent;
     background-color: #1a73e8;
     color: #fff;
-    min-width: 96px;
+    min-width: 45px;
     border-radius: 4px;
     padding: 9px 23px;
     font-weight: 500;
@@ -39,6 +54,23 @@ a:hover {
     background: #2b7de9;
     box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3), 0 1px 3px 1px rgba(66,133,244,0.15);
     text-decoration: none;
+}
+.grid-selector{
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url("grid_selector.png");
+    background-position: -131px -37px;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    justify-content: start;
+    white-space: nowrap;
+}
+.grid-selector:hover{
+    background-color: #eee;
+    border-radius: 50%;
 }
 .search-area {
     display: flex;
